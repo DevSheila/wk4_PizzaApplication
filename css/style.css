@@ -117,3 +117,17 @@
     border-radius: 30px;
 
 }
+
+.form-section{
+    /* rgba(219,226,226) */
+    background-color:  rgba(219,226,226);
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px rgb(110, 108, 108);
+}
+
+.form-control{
+    color:black;
+    outline:none;
+}
+
