@@ -73,3 +73,47 @@
         transform: translateY(-35px);
     }
 }
+
+
+@media only screen and (max-width:1000px){
+
+    .navbar{
+        backround-color:rgba(0,0,0,0.8);
+    }
+
+    .navbar-nav a{
+        margin: 0px 5px 0 17px;
+        margin-top:30px;
+    }
+
+    .nav-link:hover{
+        border-bottom:none;
+        font-weight:300;
+    }
+
+    .intro{
+        padding-top:130px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .jumbotron h1{
+        font-size:26px;
+        line-height: 1.7;
+    }
+
+    .intro{
+        padding-top:100px;
+    }
+    .intro img{
+        width:20opx;
+        padding-top:50px;
+    }
+}
+.row{
+    background-color:transparent;
+    border-radius: 30px;
+
+}
