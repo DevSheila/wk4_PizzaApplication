@@ -262,3 +262,11 @@ Store.prototype.addPizzas = function(pizza){
 
     localStorage.setItem('pizzas' ,JSON.stringify(pizzas))
 }
+
+Display.prototype.displayPizzas = function(){
+    const pizzas = store.getPizzas();
+
+    pizzas.forEach((pizza)=>{
+        this.addPizza(pizza);
+    })
+}
