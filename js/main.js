@@ -209,3 +209,27 @@ Display.prototype.addPizza = function(pizza){
 
 
 }
+
+Display.prototype.showTotals = function(){
+    //an array to get the totals for the item count and item price
+    const totals = [];
+    const itemPrice = document.querySelectorAll('#card-total-price');
+    
+    itemPrice.forEach((item)=>{
+        //pushing items to my array using the .push Javascript array method
+        totals.push(item.textContent)
+        console.log(item.textContent)
+    })
+    console.log(itemPrice)
+    console.log(totals)
+    
+    let intTotals = totals.map((i)=>Number(i));
+    console.log(intTotals)
+    
+    let totalMoney = intTotals.reduce(function(a,b){
+        return a+b;
+    },0)
+    console.log(totalMoney)
+    document.querySelector('.total-price').textContent = totalMoney;
+
+}
