@@ -3,3 +3,26 @@
     padding: 0;
     /* font-family:'Source Serif Pro'; */
 }
+
+.jumbotron{
+    background-image: url('../images/danielle-macinnes-logv9s7f67o-unsplash.jpg');
+    height: 88vh;
+    background-size: cover;
+    background-position:center;
+    color:#fff;
+    border-radius: 0px!important;
+}
+
+.jumbotron h1{
+    margin:30px 0;
+    font-size:30px;
+    line-height:1.5;
+}
+.intro{
+    padding-top:160px;
+}
+
+.jumbotron .intro-logo{
+    width: 100px;
+    height: 100px;
+}
