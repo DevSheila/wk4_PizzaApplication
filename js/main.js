@@ -255,3 +255,10 @@ Store.prototype.getPizzas= function(){
     return pizzas;
 
 }
+
+Store.prototype.addPizzas = function(pizza){
+    const pizzas = this.getPizzas();
+    pizzas.push(pizza);
+
+    localStorage.setItem('pizzas' ,JSON.stringify(pizzas))
+}
