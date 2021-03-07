@@ -23,6 +23,27 @@ document.getElementById('pizzaForm').addEventListener('submit', function(event){
 
 })
 
+//checking validation for fields
+Display.prototype.validateField = function(pizza,store){
+    //check if inputs are empty
+
+    if(this.delivery.value == 'yes delivery'){
+        var location = prompt("Enter location of delivery");
+        alert("Your order will be deliered at "+ location);
+
+    }
+
+    if(this.size.value === '' ||this.crust.value === ''|| this.toppings.value  === ''|| this.numPizzas.value  === ''|| this.delivery.value === ''){
+        alert("fill all fields");
+
+    }else{
+        // alert(" all fields have been filled");
+        this.addPizza(pizza);
+        store.addPizzas(pizza);
+        this.clearFields();
+    }
+}
+
 
 function Display(){
     this.size = document.querySelector('#pizzaSize');
