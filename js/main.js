@@ -2,6 +2,28 @@ const display = new Display();
 
 const store = new Store();
 
+//add a pizza order on submit
+document.getElementById('pizzaForm').addEventListener('submit', function(event){
+
+    //prevent submission without inputs
+    event.preventDefault();
+
+    const size = document.querySelector('#pizzaSize');
+    const crust = document.querySelector('#pizzaCrust');
+    const toppings = document.querySelector('#pizzaToppings');
+    const numPizzas = document.querySelector('#numPizzas');
+    const delivery = document.querySelector('#delivery');
+
+    //create an object for the constructor function
+    const pizza = new Pizza(this.size.value, this.crust.value, this.toppings.value,this.numPizzas.value, this.delivery.value );
+
+    //validate input fields
+    display.validateField(pizza,store);
+
+
+})
+
+
 function Display(){
     this.size = document.querySelector('#pizzaSize');
     this.crust = document.querySelector('#pizzaCrust');
