@@ -233,3 +233,14 @@ Display.prototype.showTotals = function(){
     document.querySelector('.total-price').textContent = totalMoney;
 
 }
+
+Display.prototype.clearFields = function(){
+    this.size = '';
+    this.crust = '';
+    this.toppings = '';
+    this.numPizza = '';
+    this.delivery = '';
+
+
+    
+}
