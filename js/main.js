@@ -270,3 +270,6 @@ Display.prototype.displayPizzas = function(){
         this.addPizza(pizza);
     })
 }
+
+document.addEventListener('DOMContentLoaded', 
+display.displayPizzas())
