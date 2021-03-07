@@ -130,6 +130,9 @@
     color:black;
     outline:none;
 }
+.form-select{
+    width: 100%;
+}
 .btn1{
    
     background-color: black;
