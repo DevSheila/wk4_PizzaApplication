@@ -18,7 +18,7 @@ La Pizziera is a web application that allows people to order pizza.Pizzas ordere
 * [Licence](#Licence)
 
 ## Demo
-Here is a working live demo :    https://devsheila.github.io/wk3_DelaniStudio/
+Here is a working live demo :    https://devsheila.github.io/wk4_PizzaApplication/
 ## Features
 
 *This website is fully interactive,responsive and easy to use
@@ -45,7 +45,7 @@ There are curently no bugs.
 * You can also clone it directly to your folder:
 
 ```
-$ git clone  https://devsheila.github.io/wk3_DelaniStudio/
+$ git clone  https://devsheila.github.io/wk4_PizzaApplication/
 
 ```
 
