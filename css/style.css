@@ -27,7 +27,14 @@
     height: 100px;
 }
 
-.navbar-brand ,.navbar-nav a{
+.navbar-brand {
+    background: -webkit-linear-gradient(#8e9eab,#eef2f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+}
+.navbar-nav a{
    
     color:#fff;
     margin:0 20px; 
