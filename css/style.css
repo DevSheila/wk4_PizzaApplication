@@ -57,3 +57,19 @@
     margin-bottom: -1px;
 
 }
+
+.masthead-mouse {
+    margin-top: 5rem;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-40px) ;
+    }
+    60% {
+        transform: translateY(-35px);
+    }
+}
