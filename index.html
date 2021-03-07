@@ -19,35 +19,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ----------------------------------------------NAVBAR---------------------------------------------------- -->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <i class="fas fa-bars"></i> -->
+              <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item  ">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+    
+    </section>
+    <!-- ---------------------------------------------- END OF NAVBAR------------------------------------------- -->
 
-        <!-- ----------------------------------------------NAVBAR---------------------------------------------------- -->
-        <section id="header">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <i class="fas fa-bars"></i> -->
-                  <span class="navbar-toggler-icon"></span>
-                </button>   
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item  ">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    
-                  </ul>
-                </div>
-              </nav>
-        
-        </section>
-        <!-- ---------------------------------------------- END OF NAVBAR------------------------------------------- -->
-
-            <!-- ----------------------------------------------JUMBOTRON--------------------------------------------------- -->
+    <!-- ----------------------------------------------JUMBOTRON--------------------------------------------------- -->
     
     <div class="jumbotron text-center">
         <div class="intro">
@@ -65,121 +64,122 @@
         </div>
     </div>
     <!-- ---------------------------------------------- END OF JUMBOTRON------------------------------------------- -->
+
     <!-- ----------------------------------------------FORM SECTION--------------------------------------------- -->
-    <section class="form " id="formSection">
-        <div class="container p-5">
-            <div class="row d-flex justify-content-center my-5">
-                <div class="col-lg-10  px-5 pt-5 form-section">
-                    <!-- feedback  -->
-                    <div class="feedback text-center text-capitalize">
-                       
+<section class="form " id="formSection">
+    <div class="container p-5">
+        <div class="row d-flex justify-content-center my-5">
+            <div class="col-lg-10  px-5 pt-5 form-section">
+                <!-- feedback  -->
+                <div class="feedback text-center text-capitalize">
+                   
+                </div>
+                <h4 class="text-center"> Make your order</h4>
+                <form name="pizzaForm" action="" id='pizzaForm' method="get">
+                   <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="size">Enter Pizza Size</label>
+                            <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
+                                <option selected></option>
+                                <option value="large">Large</option>
+                                <option value="medium">Medium</option>
+                                <option value="small">small</option>
+                            </select>
+                        </div>
                     </div>
-                    <h4 class="text-center"> Make your order</h4>
-                    <form name="pizzaForm" action="" id='pizzaForm' method="get">
-                       <div class="form-row">
-                            <div class="col-lg-12">
-                                <label for="size">Enter Pizza Size</label>
-                                <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
-                                    <option selected></option>
-                                    <option value="large">Large</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="small">small</option>
-                                </select>
-                            </div>
-                        </div>
-        
-                        <div class="form-row">
-                            <div class="col-lg-12">
-                                <label for="crust">Enter Crust Type</label>
-                                <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
-                                    <option selected></option>
-                                    <option value="crispy">Crispy</option>
-                                    <option value="stuffed">Stuffed</option>
-                                    <option value="glutten Free">Glutten Free</option>
-                                </select>
-                            </div>
-                        </div>
     
-                        <div class="form-row">
-                            <div class="col-lg-12">
-                                <label for="crust">Enter Toppings</label>
-                                <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
-                                    <option selected></option>
-                                    <option value="onions">Onions</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="olives">Olives</option>
-    
-                                    <option value="bacon">Bacon</option>
-                                    <option value="sausage">Sausage</option>
-                                    <option value="chicken">Chicken</option>
-                                    <option value="beef">Beef</option>
-    
-                                    
-                                </select>
-                            </div>
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="crust">Enter Crust Type</label>
+                            <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
+                                <option selected></option>
+                                <option value="crispy">Crispy</option>
+                                <option value="stuffed">Stuffed</option>
+                                <option value="glutten Free">Glutten Free</option>
+                            </select>
                         </div>
-    
-                        <div class="form-row">
-                            <div class="col-lg-12">
-                                <label for="crust">Enter No Of Pizzas</label>
-                                <input type="number" name="numPizzas" id="numPizzas" placeholder=""  class="form-control my-3 p-4"> 
-                            </div>
-                        </div>
-    
-                        <div class="form-row">
-                            <div class="col-lg-12">
-                                <label for="crust">Enter Delivery Option</label>
-                                <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
-                                    <option selected></option>
-                                    <option value="no delivery">No Delivery</option>
-                                    <option value="yes delivery">Yes Delivery</option>
-                                   
-                                </select>
-                            </div>
-                        </div>
-                        
-                        
-        
-                        <div class="form-row">
-                            <div class="col-lg-12 mb-5">
-                                <button type="submit"  id="btnSubmit" class=" btn btn-lg btn1" >SUBMIT</button>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="crust">Enter Toppings</label>
+                            <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
+                                <option selected></option>
+                                <option value="onions">Onions</option>
+                                <option value="tomatoes">Tomatoes</option>
+                                <option value="mushrooms">Mushrooms</option>
+                                <option value="olives">Olives</option>
+
+                                <option value="bacon">Bacon</option>
+                                <option value="sausage">Sausage</option>
+                                <option value="chicken">Chicken</option>
+                                <option value="beef">Beef</option>
+
                                 
-                                
-                            </div>
-                            
-                        
-                            </div>
+                            </select>
                         </div>
-        
-                    </form>  
-                    
-                    <button type="button"  id="btnCheckout" class=" btn btn-lg btn1 col-lg-6 m-5" >CHECKOUT</button>
-                                
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="crust">Enter No Of Pizzas</label>
+                            <input type="number" name="numPizzas" id="numPizzas" placeholder=""  class="form-control my-3 p-4"> 
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="crust">Enter Delivery Option</label>
+                            <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
+                                <option selected></option>
+                                <option value="no delivery">No Delivery</option>
+                                <option value="yes delivery">Yes Delivery</option>
                                
-                </div>
-    
-                <div class="row">
-    
-                </div>
-    
-                <div class="row" id="pizzas-list">
-    
-                </div>
-                <div class="row" id="pizzas-total">
-                    <div class="col-lg-8 col-md-8" >
-                        <p>Totals:$ <span class="total-price"></span></p>
+                            </select>
+                        </div>
                     </div>
-                 
-                </div>
+                    
+                    
     
-          
+                    <div class="form-row">
+                        <div class="col-lg-12 mb-5">
+                            <button type="submit"  id="btnSubmit" class=" btn btn-lg btn1" >SUBMIT</button>
+                            
+                            
+                        </div>
+                        
+                    
+                        </div>
+                    </div>
+    
+                </form>  
+                
+                <button type="button"  id="btnCheckout" class=" btn btn-lg btn1 col-lg-6 m-5" >CHECKOUT</button>
+                            
+                           
             </div>
+
+            <div class="row">
+
+            </div>
+
+            <div class="row" id="pizzas-list">
+
+            </div>
+            <div class="row" id="pizzas-total">
+                <div class="col-lg-8 col-md-8" >
+                    <p>Totals:$ <span class="total-price"></span></p>
+                </div>
+             
+            </div>
+
+      
         </div>
-    </section>
-    <!-- --------------------------------------------END OF FORM SECTION---------------------------------------- -->
-       
-    <!-- --------------------------------------------FOOTER SECTION---------------------------------------- -->
+    </div>
+</section>
+<!-- --------------------------------------------END OF FORM SECTION---------------------------------------- -->
+   
+<!-- --------------------------------------------FOOTER SECTION---------------------------------------- -->
     <footer  >
         <div class="container-fluid padding">
              <hr class="my-4">
@@ -201,13 +201,11 @@
         </div>
      </footer>
 
-<!-- jquery -->
-<script
-         src="https://code.jquery.com/jquery-2.2.4.min.js"
-         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-         crossorigin="anonymous">
-</script>
-<!-- maij js file -->
-<script src="js/main.js"></script>
+         <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

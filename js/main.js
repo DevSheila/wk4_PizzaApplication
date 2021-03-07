@@ -24,8 +24,7 @@ document.getElementById('pizzaForm').addEventListener('submit', function(event){
 })
 
 
-
-
+//display constructor function
 function Display(){
     this.size = document.querySelector('#pizzaSize');
     this.crust = document.querySelector('#pizzaCrust');
@@ -69,6 +68,7 @@ Display.prototype.validateField = function(pizza,store){
         this.clearFields();
     }
 }
+
 
 Display.prototype.addPizza = function(pizza){
 
@@ -210,6 +210,8 @@ Display.prototype.addPizza = function(pizza){
 
 }
 
+
+
 Display.prototype.showTotals = function(){
     //an array to get the totals for the item count and item price
     const totals = [];
@@ -273,3 +275,17 @@ Display.prototype.displayPizzas = function(){
 
 document.addEventListener('DOMContentLoaded', 
 display.displayPizzas())
+
+
+
+$(document).ready(function(){
+       
+        $('#pizzas-list').hide()
+        $('#pizzas-total').hide()
+
+        $('#btnCheckout').click(function(){
+          
+                $('#pizzas-list').show()
+                $('#pizzas-total').show()
+        });
+})
