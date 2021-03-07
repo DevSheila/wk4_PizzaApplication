@@ -244,3 +244,14 @@ Display.prototype.clearFields = function(){
 
     
 }
+
+Store.prototype.getPizzas= function(){
+    let pizzas;
+    if(localStorage.getItem('pizzas') === null){
+        pizzas = []
+    }else{
+        pizzas = JSON.parse(localStorage.getItem('pizzas'))
+    }
+    return pizzas;
+
+}
