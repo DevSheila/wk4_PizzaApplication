@@ -1,3 +1,7 @@
+const display = new Display();
+
+const store = new Store();
+
 function Display(){
     this.size = document.querySelector('#pizzaSize');
     this.crust = document.querySelector('#pizzaCrust');
