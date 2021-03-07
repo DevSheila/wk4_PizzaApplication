@@ -69,3 +69,143 @@ Display.prototype.validateField = function(pizza,store){
         this.clearFields();
     }
 }
+
+Display.prototype.addPizza = function(pizza){
+
+    const div = document.createElement('div');
+    
+    let sizePrice =0;
+   if(pizza.size =='large'){
+     sizePrice = 10;
+   }else if(pizza.size == 'medium'){
+        sizePrice = 7;
+
+   }else if(pizza.size == 'small'){
+        sizePrice = 5;
+   }else{
+       sizePrice= 0;
+   }
+ 
+   let crustPrice=0;
+   if(pizza.crust == 'crispy' ){
+        crustPrice = 1;
+   }else if(pizza.crust == 'stuffed'){
+        crustPrice = 2;
+   }else if(pizza.crust == 'glutten Free'){
+        crustPrice = 2;
+   }else{
+        crustPrice = 0;
+   }
+
+   let toppingsPrice=0;
+   if(pizza.toppings== 'onions' ){
+        toppingsPrice = 1;
+   }else if(pizza.toppings == 'tomatoes'){
+        toppingsPrice = 1;
+   }else if(pizza.toppings == 'mushrooms'){
+        toppingsPrice = 1;
+   }else if(pizza.toppings == 'olives'){
+      toppingsPrice = 1;
+   }else if(pizza.toppings== 'bacon' ){
+        toppingsPrice = 2;
+    }else if(pizza.toppings == 'sausage'){
+        toppingsPrice = 2;
+    }else if(pizza.toppings == 'chicken'){
+        toppingsPrice = 2;
+    }else if(pizza.toppings == 'beef'){
+        toppingsPrice = 2;
+    }else{
+        toppingsPrice = 0;
+   }
+
+
+   let deliveryPrice
+   if(pizza.delivery == 'yes delivery'){
+
+        deliveryPrice= 20;
+    }else{
+        deliveryPrice=0;
+    }
+   let totalPrice;
+
+   if(pizza.numPizzas == 1){
+   totalPrice= sizePrice + crustPrice + toppingsPrice +deliveryPrice;
+
+   }else{
+   totalPrice= (sizePrice + crustPrice + toppingsPrice +deliveryPrice)*pizza.numPizzas;
+
+   }
+
+
+    div.classList.add('col-11', 'mx-auto', 'col-md-6', 'my-3', 'col-lg-4');
+
+
+  div.innerHTML= ` <table class="table table-bordered ">
+  <thead class="thead-light">
+    <tr>
+      
+      <th scope="col">Title</th>
+      <th scope="col">Input</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+      
+    <tr>
+      <td>Size</td>
+      <td>${pizza.size}</td>
+      <td>$ ${sizePrice}</td>
+    </tr>
+
+    <tr>
+  
+      <td>Crust</td>
+      <td>${pizza.crust}</td>
+      <td>$ ${crustPrice}</td>
+    </tr>
+
+    <tr>
+  
+      <td>Toppings</td>
+      <td>${pizza.toppings}</td>
+      <td>$ ${toppingsPrice}</td>
+    </tr>
+
+
+    <tr>
+  
+      <td>Num Pizzas</td>
+      <td>${pizza.numPizzas}</td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+  
+      <td>Delivery</td>
+      <td>${pizza.delivery}</td>
+      <td>$ ${deliveryPrice}</td>
+    </tr>
+
+    
+    <tr>
+  
+      <td>Total</td>
+      <td></td>
+      <td>$<span id="card-total-price"> ${totalPrice}</span></td>
+    </tr>
+    <tr>
+      
+  </tbody>
+</table>`;
+
+
+
+
+    //appending new pizza order table to the pizza list.
+   this.pizzas.appendChild(div)
+//    this.cardTotals();
+   this.showTotals()
+
+
+
+}
