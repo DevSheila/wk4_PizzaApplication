@@ -54,7 +54,7 @@ Display.prototype.validateField = function(pizza,store){
 
     if(this.delivery.value == 'yes delivery'){
         var location = prompt("Enter location of delivery");
-        alert("Your order will be deliered at "+ location + " delivery charge will be $20 ");
+        alert("Your order will be deliered at "+ location +" on check out " + " delivery charge will be $20 ");
         // this.clearFields();
 
 
