@@ -55,6 +55,8 @@ Display.prototype.validateField = function(pizza,store){
     if(this.delivery.value == 'yes delivery'){
         var location = prompt("Enter location of delivery");
         alert("Your order will be deliered at "+ location + " delivery charge will be $20 ");
+        // this.clearFields();
+
 
     }
 
@@ -62,10 +64,10 @@ Display.prototype.validateField = function(pizza,store){
         alert("fill all fields");
 
     }else{
-        // alert(" all fields have been filled");
+        alert("You have successfully made your order ");
+        this.clearFields();
         this.addPizza(pizza);
         store.addPizzas(pizza);
-        this.clearFields();
     }
 }
 
@@ -237,11 +239,11 @@ Display.prototype.showTotals = function(){
 }
 
 Display.prototype.clearFields = function(){
-    this.size = '';
-    this.crust = '';
-    this.toppings = '';
-    this.numPizza = '';
-    this.delivery = '';
+    this.size.value = '';
+    this.crust.value = '';
+    this.toppings.value = '';
+    this.numPizzas.value = '';
+    this.delivery.value = '';
 
 
     
@@ -276,15 +278,21 @@ Display.prototype.displayPizzas = function(){
 document.addEventListener('DOMContentLoaded', 
 display.displayPizzas())
 
+document.querySelector("#btnClear").addEventListener('click', function(pizza){
 
+    window.localStorage.removeItem('pizzas');
+    window.location.reload();
+
+})
 
 $(document).ready(function(){
        
        
         $('#pizzas-total').hide()
-
+        $('#btnClear').hide()
         $('#btnCheckout').click(function(){
           
+                $('#btnClear').show()
                 
                 $('#pizzas-total').show()
         });

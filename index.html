@@ -81,9 +81,9 @@
                             <label for="size">Enter Pizza Size</label>
                             <select name="size" id="pizzaSize" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
                                 <option selected></option>
-                                <option value="large">Large</option>
-                                <option value="medium">Medium</option>
-                                <option value="small">small</option>
+                                <option value="large">Large --$10</option>
+                                <option value="medium">Medium --$7</option>
+                                <option value="small">small --$5</option>
                             </select>
                         </div>
                     </div>
@@ -93,9 +93,9 @@
                             <label for="crust">Enter Crust Type</label>
                             <select name="crust" id="pizzaCrust" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
                                 <option selected></option>
-                                <option value="crispy">Crispy</option>
-                                <option value="stuffed">Stuffed</option>
-                                <option value="glutten Free">Glutten Free</option>
+                                <option value="crispy">Crispy --$1</option>
+                                <option value="stuffed">Stuffed --$2</option>
+                                <option value="glutten Free">Glutten Free --$2</option>
                             </select>
                         </div>
                     </div>
@@ -105,20 +105,58 @@
                             <label for="crust">Enter Toppings</label>
                             <select name="toppings" id="pizzaToppings" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
                                 <option selected></option>
-                                <option value="onions">Onions</option>
-                                <option value="tomatoes">Tomatoes</option>
-                                <option value="mushrooms">Mushrooms</option>
-                                <option value="olives">Olives</option>
+                                <option value="onions">Onions --$1</option>
+                                <option value="tomatoes">Tomatoes --$1</option>
+                                <option value="mushrooms">Mushrooms --$1</option>
+                                <option value="olives">Olives --$1</option>
 
-                                <option value="bacon">Bacon</option>
-                                <option value="sausage">Sausage</option>
-                                <option value="chicken">Chicken</option>
-                                <option value="beef">Beef</option>
+                                <option value="bacon">Bacon --$2</option>
+                                <option value="sausage">Sausage --$2</option>
+                                <option value="chicken">Chicken --$2</option>
+                                <option value="beef">Beef --$2</option>
 
                                 
                             </select>
                         </div>
                     </div>
+
+                    <!-- <div class="form-row">
+                        <div class="col-lg-12">
+                            <label for="Toppings">Select Your Toppings </label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox1" value="bacon">
+                            <label class="form-check-label" for="inlineCheckbox1">Bacon</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="sausage">
+                            <label class="form-check-label" for="inlineCheckbox2">Sausage</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="chicken">
+                            <label class="form-check-label" for="inlineCheckbox2">Chicken</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="beef">
+                            <label class="form-check-label" for="inlineCheckbox2">Beef</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox1" value="onions">
+                            <label class="form-check-label" for="inlineCheckbox1">Onions</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="tomatoes">
+                            <label class="form-check-label" for="inlineCheckbox2">Tomatoes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="olives">
+                            <label class="form-check-label" for="inlineCheckbox2">Olives</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input pizzaToppings" type="checkbox" id="inlineCheckbox2" value="mushrooms">
+                            <label class="form-check-label" for="inlineCheckbox2">Mushrooms</label>
+                          </div>
+                        </div>
+                    </div> -->
 
                     <div class="form-row">
                         <div class="col-lg-12">
@@ -132,8 +170,8 @@
                             <label for="crust">Enter Delivery Option</label>
                             <select name="delivery" id="delivery" class="form-select form-select-lg my-3 p-4" aria-label=".form-select-lg example" >
                                 <option selected></option>
-                                <option value="no delivery">No Delivery</option>
-                                <option value="yes delivery">Yes Delivery</option>
+                                <option value="no delivery">No Delivery --$0</option>
+                                <option value="yes delivery">Yes Delivery --$20</option>
                                
                             </select>
                         </div>
@@ -173,9 +211,11 @@
              
             </div>
             <div class="row">
-                <div class="col-lg-4"></div>
+                <div class="col-lg-2"></div>
+                <button type="button"  id="btnClear" class=" btn btn-lg btn1 col-lg-3 m-5" >CLEAR ORDERS</button>
+
                 <button type="button"  id="btnCheckout" class=" btn btn-lg btn1 col-lg-3 m-5" >CHECKOUT</button>
-                <div class="col-lg-4"></div>
+                <div class="col-lg-2"></div>
             </div>
            
 
