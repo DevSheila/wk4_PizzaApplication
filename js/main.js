@@ -289,11 +289,9 @@ $(document).ready(function(){
        
        
         $('#pizzas-total').hide()
-        $('#btnClear').hide()
+       
         $('#btnCheckout').click(function(){
           
-                $('#btnClear').show()
-                
                 $('#pizzas-total').show()
         });
 })
