@@ -54,7 +54,7 @@ Display.prototype.validateField = function(pizza,store){
 
     if(this.delivery.value == 'yes delivery'){
         var location = prompt("Enter location of delivery");
-        alert("Your order will be deliered at "+ location);
+        alert("Your order will be deliered at "+ location + " delivery charge will be $20 ");
 
     }
 
@@ -137,15 +137,15 @@ Display.prototype.addPizza = function(pizza){
    }
 
 
-    div.classList.add('col-11', 'mx-auto', 'col-md-6', 'my-3', 'col-lg-4');
+    div.classList.add('col-11', 'mx-auto', 'col-md-6', 'my-3', 'col-lg-8');
 
 
-  div.innerHTML= ` <table class="table table-bordered ">
-  <thead class="thead-light">
+  div.innerHTML= ` <table class="table table-dark  ">
+  <thead class="">
     <tr>
       
       <th scope="col">Title</th>
-      <th scope="col">Input</th>
+      <th scope="col">Order</th>
       <th scope="col">Price</th>
     </tr>
   </thead>
@@ -280,12 +280,12 @@ display.displayPizzas())
 
 $(document).ready(function(){
        
-        $('#pizzas-list').hide()
+       
         $('#pizzas-total').hide()
 
         $('#btnCheckout').click(function(){
           
-                $('#pizzas-list').show()
+                
                 $('#pizzas-total').show()
         });
 })
